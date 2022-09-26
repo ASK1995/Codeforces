@@ -1,0 +1,13 @@
+numbers = input().split()
+n, k = int(numbers[0]), int(numbers[1])
+
+l = input().split()
+n -= 1
+total = 0
+k = int(l[k-1])
+for i in l:
+	if(int(i) >= k and int(i) > 0):
+		total += 1
+	else:
+		break
+print(total)

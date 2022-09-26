@@ -1,0 +1,13 @@
+s = input()
+lowers, uppers = 0, 0
+
+for letter in s:
+	if(letter.isupper()):
+		uppers += 1
+	else:
+		lowers += 1
+
+if(uppers > lowers):
+	print(s.upper())
+else:
+	print(s.lower())

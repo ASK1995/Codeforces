@@ -1,0 +1,13 @@
+s = input()
+s1 = set()
+total = 0
+
+for letter in s:
+	if(letter not in s1):
+		s1.add(letter)
+		total += 1
+
+if( total % 2 == 0):
+	print("CHAT WITH HER!")
+else:
+	print("IGNORE HIM!")

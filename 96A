@@ -1,0 +1,15 @@
+s = input()
+current, previous = None, None
+count = 0
+
+for digit in s:
+	current, previous = digit, current
+	if(current == previous):
+		count += 1
+		if(count >= 7):
+			print("YES")
+			exit()
+	else:
+		count = 1
+
+print("NO")

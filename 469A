@@ -1,0 +1,26 @@
+levels = int(input())
+
+X = [int(x) for x in input().split()]
+
+Y = [int(y) for y in input().split()]
+
+s = set()
+
+ignore_first = True
+for i in X:
+	if(ignore_first):
+		ignore_first = False
+		continue
+	s.add(i)
+
+ignore_first = True
+for i in Y:
+	if(ignore_first):
+		ignore_first = False
+		continue
+	s.add(i)
+
+if(len(s) == levels):
+	print("I become the guy.")
+else:
+	print("Oh, my keyboard!")

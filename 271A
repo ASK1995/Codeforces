@@ -1,0 +1,22 @@
+def distinct(n):
+	s = set([])
+
+	while(n != 0):
+		s.add(n%10)
+		n = n//10
+	num_distinct_digits = len(s)
+	del s
+	if(num_distinct_digits != 4):
+		return False
+	else:
+		return True
+
+n = int(input())
+n = n + 1
+
+while(n <= 10000):
+	if(distinct(n)):
+		print(n)
+		break
+	n += 1
+

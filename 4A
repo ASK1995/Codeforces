@@ -1,0 +1,8 @@
+W = int(input())
+W1 = W
+W2 = W - 2
+
+if (W2 % 2 == 0 and W != 2):
+	print("YES")
+else:
+	print("NO")

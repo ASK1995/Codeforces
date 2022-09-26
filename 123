@@ -1,0 +1,11 @@
+N = int(input())
+current = 0
+next = 1
+total = 0
+
+while(N != 0):
+	current, next = next, current + next
+	total += current
+	N -= 1
+
+print(total)

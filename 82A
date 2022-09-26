@@ -1,0 +1,9 @@
+n = int(input())
+subtractor = 5
+
+while(n - subtractor >= 5):
+	n = n - subtractor
+	subtractor *= 2
+
+names = ["Howard", "Sheldon", "Leonard", "Penny", "Rajesh"]
+print(names[n])

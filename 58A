@@ -1,0 +1,11 @@
+s = input()
+letters = ["h", "e", "l", "l", "o"]
+
+for letter in s:
+	if(letter == letters[0]):
+		letters.pop(0)
+		if(len(letters) == 0):
+			print("YES")
+			exit()
+
+print("NO")

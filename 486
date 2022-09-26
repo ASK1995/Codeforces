@@ -1,0 +1,20 @@
+secret = input()
+guess = input()
+
+bulls = 0
+cows = 0
+
+secret_set = set(secret)
+guess_set = set(guess)
+
+for i in range(4):
+	if(secret[i] == guess[i]):
+		bulls += 1
+	secret_set.add(secret[i])
+	guess_set.add(guess[i])
+
+for i in range(4):
+	if(guess[i] in secret_set and guess[i] != secret[i]):
+		cows += 1
+
+print(bulls, cows)

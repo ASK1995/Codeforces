@@ -1,0 +1,11 @@
+l = [int(x) for x in input().split()]
+
+high = max(l)
+res = []
+
+for number in l:
+	res.append(high - number)
+
+res.remove(0)
+
+print(res[0], res[1], res[2])
