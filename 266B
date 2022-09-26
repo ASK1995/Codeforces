@@ -1,0 +1,15 @@
+n, t = [int(x) for x in input().split()]
+
+l = list(input())
+
+while(t != 0):
+	index = 0
+	while(index < len(l) - 1):
+		if(l[index] == 'B' and l[index + 1] == 'G'):
+			l[index] = 'G'
+			l[index + 1] = 'B'
+			index += 2
+		else:
+			index += 1
+	t -= 1
+print("".join(l))

@@ -1,0 +1,14 @@
+s = input()
+
+s = s.lower()
+
+result = ""
+vowels = set(["a", "e", "i", "o", "u", "y"])
+
+for letter in s:
+	if(letter in vowels):
+		continue
+	else:
+		result += "." + letter
+
+print(result)

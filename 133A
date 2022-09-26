@@ -1,0 +1,9 @@
+s = input()
+
+
+for letter in s:
+	if(letter == "H" or letter == "Q" or letter == "9"):
+		print("YES")
+		exit()
+
+print("NO")

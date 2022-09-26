@@ -1,6 +1,13 @@
-n = int(input())
-if(n % 5 == 0):
-	print(n//5)
-else:
-	print(n//5 + 1)
+n1 = input()
+n2 = input()
+result = ""
 
+for index in range(len(n1)):
+	if(n1[index] == "1" and n2[index] == "1"):
+		result += "0"
+	elif(n1[index] == "1" or n2[index] == "1"):
+		result += "1"
+	else:
+		result += "0"
+
+print(result)

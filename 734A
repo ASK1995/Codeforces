@@ -1,0 +1,18 @@
+n = int(input())
+
+A, D = 0, 0
+
+s = input()
+
+for digit in s:
+	if(digit == 'A'):
+		A += 1
+	else:
+		D += 1
+
+if (A == D):
+	print("Friendship")
+elif (A > D):
+	print("Anton")
+else:
+	print("Danik")

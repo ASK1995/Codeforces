@@ -1,0 +1,9 @@
+n = int(input())
+
+negatives = n//2 + n%2
+negatives_sum = -1 * (negatives**2)
+
+positives = n//2
+positives_sum = positives * (positives + 1)
+
+print(negatives_sum + positives_sum)

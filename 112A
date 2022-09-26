@@ -1,0 +1,19 @@
+s1 = input()
+s2 = input()
+
+s1 = s1.lower()
+s2 = s2.lower()
+
+for i in range(len(s1)):
+	value1 = ord(s1[i])
+	value2 = ord(s2[i])
+	if(value1 == value2):
+		continue
+	elif(value1 > value2):
+		print("1")
+		exit()
+	else:
+		print("-1")
+		exit()
+
+print("0")

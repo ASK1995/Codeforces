@@ -1,0 +1,19 @@
+total = int(input())
+
+numbers = 0
+
+numbers += total//100
+total = total%100
+numbers += total//20
+total = total%20
+numbers += total//10
+total = total%10
+numbers += total//5
+total = total%5
+numbers += total//1
+total = total%1
+
+print(numbers)
+
+
+

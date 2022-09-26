@@ -1,0 +1,15 @@
+from collections import defaultdict
+
+k = int(input())
+
+s = input()
+
+d = defaultdict(lambda:0)
+
+for letter in s:
+	d[letter] += 1
+
+if(all(d[x] % k == 0 for x in d.keys())):
+	print("".join(sorted(d.keys())*k))
+else:
+	print(-1)
