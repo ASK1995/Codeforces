@@ -1,0 +1,13 @@
+t = int(input())
+from collections import defaultdict
+d = defaultdict(lambda:[])
+
+while(t != 0):
+	x = input()
+	if(d[x] != []):
+		d[x].append(d[x][-1] + 1)
+		print(x + str(d[x][-1]))
+	else:
+		d[x].append(0)
+		print("OK")
+	t -= 1

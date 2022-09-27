@@ -1,0 +1,17 @@
+from collections import defaultdict
+scores = defaultdict(lambda:0)
+
+n = int(input())
+
+high = 0
+high_scorer = None
+
+while(n != 0):
+	round = input().split()
+	scores[round[0]] += int(round[1])
+	if(scores[round[0]] > high):
+		high = scores[round[0]]
+		high_scorer = round[0]
+	n -= 1
+
+print(high_scorer)

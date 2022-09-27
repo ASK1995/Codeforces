@@ -1,0 +1,12 @@
+t = int(input())
+
+while(t != 0):
+	a, b, c, n = [int(x) for x in input().split()]
+	if(a - n <= b and a - n <= c and b - n <= a and b - n <= c and c - n <= a and c - n <= b):
+		if((a+b+c+n) % 3 == 0):
+			print("YES")
+		else:
+			print("NO")
+
+	t -= 1
+

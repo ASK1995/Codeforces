@@ -1,0 +1,16 @@
+n = int(input())
+
+l = [int(x) for x in input().split()]
+
+minimum = min(l)
+for index, value in enumerate(l):
+	if(value == minimum):
+		minimal = index + 1
+
+maximal = l.index(max(l))
+result = 0
+
+if(maximal >= minimal):
+	result -= 1
+
+print(n - minimal + maximal + result)

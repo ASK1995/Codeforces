@@ -1,0 +1,15 @@
+t = int(input())
+
+while(t != 0):
+	n = int(input())
+	l = [int(x) for x in input().split()]
+	s = set(l)
+
+	first, second = None
+	for index, value in enumerate(l):
+		if(first == None):
+			first = value
+		elif(value != first):
+			print(index + 1)
+			break
+	t -= 1

@@ -1,0 +1,10 @@
+matrix = []
+
+for row in range(5):
+	values = [int(x) for x in input().split()]
+	matrix.append(values)
+
+for row in range(5):
+	for column in range(5):
+		if(matrix[row][column] == 1):
+			print(abs(row - 2) + abs(column - 2))

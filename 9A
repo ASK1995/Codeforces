@@ -1,0 +1,15 @@
+def gcd(a, b):
+	if(b == 1):
+		return a
+	elif(b % a == 0):
+		return a
+	else:
+		return gcd(b%a, a)
+
+
+Y, W = [int(x) for x in input().split()]
+
+high = max(Y, W)
+divider = gcd(6 - high + 1, 6)
+
+print(str((6 - high + 1)//divider) + "/" + str(6//divider))

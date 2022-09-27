@@ -1,0 +1,11 @@
+t = int(input())
+
+while(t != 0):
+	a, b = [int(x) for x in input().split()]
+	diff = abs(a - b)
+	total = 0
+	if(diff%10 != 0):
+		total += 1
+	total += diff//10 
+	print(total)
+	t -= 1

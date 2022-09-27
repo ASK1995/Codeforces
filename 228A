@@ -1,0 +1,9 @@
+a, b, c, d = [int(x) for x in input().split()]
+
+s = set()
+s.add(a)
+s.add(b)
+s.add(c)
+s.add(d)
+
+print(4 - len(s))
