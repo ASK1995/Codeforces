@@ -1,0 +1,11 @@
+n = int(input())
+total = 0
+capacity = 0
+
+while(n != 0):
+	a, b = [int(x) for x in input().split()]
+	total += b - a
+	capacity = max(capacity, total)
+	n -= 1
+
+print(capacity)

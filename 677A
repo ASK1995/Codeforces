@@ -1,0 +1,10 @@
+n, height = [int(x) for x in input().split()]
+total = 0
+
+l = [int(x) for x in input().split()]
+for i in l:
+	if(i > height):
+		total += 1
+	total += 1
+
+print(total)

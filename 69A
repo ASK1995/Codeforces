@@ -1,0 +1,13 @@
+n = int(input())
+total_x, total_y, total_z = 0, 0, 0
+
+while(n != 0):
+	row = [int(value) for value in input().split()]
+	x, y, z = row[0], row[1], row[2]
+	total_x, total_y, total_z = total_x + x, total_y + y, total_z + z
+	n -= 1
+
+if(total_x == 0 and total_y == 0 and total_z == 0):
+	print("YES")
+else:
+	print("NO")

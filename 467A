@@ -1,0 +1,10 @@
+n = int(input())
+total = 0
+
+while(n != 0):
+	p, q = [int(x) for x in input().split()]
+	if(p + 2 <= q):
+		total += 1
+	n -= 1
+
+print(total)

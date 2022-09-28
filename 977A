@@ -1,0 +1,12 @@
+n, k = [int(x) for x in input().split()]
+
+
+while(k != 0):
+	if(n % 10 == 0):
+		n //= 10
+		k -= 1
+	else:
+		diff = min(k, n%10)
+		n, k = n - diff, k - diff
+
+print(n)

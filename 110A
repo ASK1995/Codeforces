@@ -1,0 +1,13 @@
+n = int(input())
+total = 0
+
+while(n != 0):
+	digit = n%10
+	if(digit == 4 or digit == 7):
+		total += 1
+	n = n//10
+
+if(total == 4 or total == 7):
+	print("YES")
+else:
+	print("NO")

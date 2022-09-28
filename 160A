@@ -5,5 +5,11 @@ l.sort()
 
 total = sum(l)
 current = 0
+i = -1
+while(current <= total//2):
+	current += l[i]
+	i -= 1
+
+print(abs(i + 1))
 
 
